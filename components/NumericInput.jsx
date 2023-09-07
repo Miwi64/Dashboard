@@ -11,14 +11,14 @@ export default function NumericInput({label, name, value, onChange}){
     /*
         tailwindcss styles
     */
-    const label_style = `text-subtitle text-3xl block mb-2`;
-    const input_style = `bg-boxback border-2 text-white border-line w-full px-4 py-2 ml-1 rounded-lg`;
-    const notify_style = `font-bold text-yellow text-xl`;
+    const labelStyle = `text-subtitle text-3xl block mb-2`;
+    const inputStyle = `bg-boxback border-2 text-white border-line w-full px-4 py-2 ml-1 rounded-lg`;
+    const notifyStyle = `font-bold text-yellow text-xl`;
     return(
         <>
-            <label htmlFor={`${name}`} className={label_style}>{label}</label>
-            <input id={name} className={input_style} type="text" name={`${name}`} value={value} onChange={onChange}/>
-            {isNaN(value) && (<p className={notify_style}>El valor introducido no es numerico</p>)}
+            <label htmlFor={`${name}`} className={labelStyle}>{label}</label>
+            <input id={name} className={inputStyle} type="text" name={`${name}`} value={value} onChange={onChange}/>
+            {isNaN(value) && (<p className={notifyStyle}>El valor introducido no es numerico</p>)}
         </>
     );
 }

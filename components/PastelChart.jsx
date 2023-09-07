@@ -13,11 +13,11 @@ export default function PastelChart({ data }) {
    */
   const { labels, values } = data;
   useEffect(() => {
-    let my_chart = Chart.getChart("pastel");
+    let myChart = Chart.getChart("pastel");
       /**
         * Destroying a previuos chart if exists
       */
-    if (my_chart) my_chart.destroy();
+    if (myChart) myChart.destroy();
     /**
       * Locating the canvas
     */

@@ -8,22 +8,22 @@ export default function TableChart ({headers,data}){
     /**
      * Tailwindcss styles.
      */
-    const table_style = `border-spacing-0 text-white w-full`;
-    const header_style = `pl-10 pt-10 pb-4 text-4xl w-1/3`;
-    const cell_style = `pl-10 pt-10 pb-4 text-xl w-1/3`;
-    const row_style = 'odd:bg-boxback';
+    const tableStyle = `border-spacing-0 text-white w-full`;
+    const headerStyle = `pl-10 pt-10 pb-4 text-4xl w-1/3`;
+    const cellStyle = `pl-10 pt-10 pb-4 text-xl w-1/3`;
+    const rowStyle = 'odd:bg-boxback';
     /**
      * Round the values (2 decimals).
      */
     const redondear = (num) => Math.round(num*100)/100
     return(
-        <table className={table_style}>
+        <table className={tableStyle}>
             <tbody>
             {/**
             * Generating the headers.
             */}
             <tr className='text-left bg-secondary'>
-                {headers.map((cell, index) => (<th className={header_style} key={index}>
+                {headers.map((cell, index) => (<th className={headerStyle} key={index}>
                     {cell}
                 </th>))}
             </tr>
@@ -31,8 +31,8 @@ export default function TableChart ({headers,data}){
             * Generating the rows.
             */}
             {data.map((row, index) => 
-            (<tr className={row_style} key={index}>
-                {Object.values(row).map((d,i) => (<td className={cell_style} key={i}>{isNaN(d)? d:redondear(d)}</td>))}
+            (<tr className={rowStyle} key={index}>
+                {Object.values(row).map((d,i) => (<td className={cellStyle} key={i}>{isNaN(d)? d:redondear(d)}</td>))}
             </tr>))}
             </tbody>
         </table>

@@ -48,38 +48,38 @@ function Composition(){
    //Adding all folds
     const folds = parseFloat(biceps) + parseFloat(triceps) + parseFloat(subscapularis) + parseFloat(iliac);
   //logarithm
-    const logfolds = Math.log10(folds);
+    const logFolds = Math.log10(folds);
   //Calculating density
-    const dc = gender === 'M'? 1.1765 - 0.0744 * logfolds: 1.1567 - 0.0717 * logfolds;
+    const dc = gender === 'M'? 1.1765 - 0.0744 * logFolds: 1.1567 - 0.0717 * logFolds;
   //fat percentage
-    const fat_percent = 495/dc - 450
+    const fatPercent = 495/dc - 450
   //Creating an array to storage the operands for osseusmass
-    const osseus_cm = [parseFloat(height), parseFloat(height), parseFloat(femur), parseFloat(bistyloid), 40000];
+    const osseusCm = [parseFloat(height), parseFloat(height), parseFloat(femur), parseFloat(bistyloid), 40000];
   //Converting to meters
-    const osseus_m = osseus_cm.map((cm) => cm * 0.01);
+    const osseusM = osseusCm.map((cm) => cm * 0.01);
   //Calculating osseus mass
-    const prod = osseus_m.reduce((ac, num)=> ac * num, 1);
+    const prod = osseusM.reduce((ac, num)=> ac * num, 1);
     const osseus = Math.pow(prod, 0.712) * 3.02;
   //Defining residual mass constant
-    const resconst = gender === 'M'? 0.24: 0.21;
+    const resConst = gender === 'M'? 0.24: 0.21;
   //Calculating residual mass
-    const residual = weight * resconst;
+    const residual = weight * resConst;
   //Calculating percentages.
-    const osseus_percent = osseus*100/weight;
-    const residual_percent = residual*100/weight;
-    const fat = fat_percent*.01*weight;
-    const muscle_percent = 100 - osseus_percent - residual_percent - fat_percent;
+    const osseusPercent = osseus*100/weight;
+    const residualPercent = residual*100/weight;
+    const fat = fatPercent*.01*weight;
+    const musclePercent = 100 - osseusPercent - residualPercent - fatPercent;
   //Calculating muscle mass.
-    const muscle = weight * .01 * muscle_percent;
+    const muscle = weight * .01 * musclePercent;
   //Returning the object
     return {
-      table: [{title: 'Masa Grasa', percentage: fat_percent, quantity: fat},
-              {title: 'Masa Ósea', percentage: osseus_percent, quantity: osseus},
-              {title: 'Masa Residual', percentage: residual_percent, quantity: residual},
-              {title: 'Masa Muscular', percentage: muscle_percent, quantity: muscle}],
+      table: [{title: 'Masa Grasa', percentage: fatPercent, quantity: fat},
+              {title: 'Masa Ósea', percentage: osseusPercent, quantity: osseus},
+              {title: 'Masa Residual', percentage: residualPercent, quantity: residual},
+              {title: 'Masa Muscular', percentage: musclePercent, quantity: muscle}],
       percentages: {
         labels: ['Masa Grasa', 'Masa Ósea', 'Masa Residual', 'Masa Muscular'],
-        values: [fat_percent, osseus_percent, residual_percent, muscle_percent]
+        values: [fatPercent, osseusPercent, residualPercent, musclePercent]
       }
     }
   }
@@ -136,15 +136,15 @@ function Composition(){
     /**
      * Tailwindcss styles.
      */
-  const title_style = `text-transparent bg-clip-text bg-gradient-to-t from-primary to-secondary text-8xl`;
-  const button_style = ` bg-boxback border-2 border-line rounded-xl text-white text-2xl px-4 py-2 
+  const titleStyle = `text-transparent bg-clip-text bg-gradient-to-t from-primary to-secondary text-8xl`;
+  const buttonStyle = ` bg-boxback border-2 border-line rounded-xl text-white text-2xl px-4 py-2 
                         hover:bg-gradient-to-r from-primary to-secondary`;
     /**
      * Returning the form
      */
   return(
   <div className=" bg-back w-full p-20">
-    <h1 className={title_style}>Composición corporal</h1>
+    <h1 className={titleStyle}>Composición corporal</h1>
     <form onSubmit={handleSubmit}>
     {/**
      * Show an Alert if there are inputs missing.
@@ -171,7 +171,7 @@ function Composition(){
           }
       </div>
       <div className='text-center'>
-          <button className={button_style}
+          <button className={buttonStyle}
            type="submit">Aceptar</button>
         </div>
     </form>
