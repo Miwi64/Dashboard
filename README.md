@@ -3,7 +3,7 @@
 <!--PROJECT BANNER-->
 <br />
 <div align="center">
-  <h3 align="center">Practica desarrollo web II</h3>
+  <h3 align="center">Dashboard</h3>
   <p align="center">
     Diseño de un dashboard básico en Next JS. 
   </p>
@@ -36,7 +36,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
-[![Dashboard[Menu composicion corporal]](https://example.com)
 Proyecto de React que utiliza Next.js
 Consiste en una web básica que cuenta con los siguientes apartados:
 * Pagina principal
@@ -61,8 +60,7 @@ _A continuación se muestra el proceso para ejecutar el proyecto. Será necesari
 
 ### Prerrequisitos
 Esta es una lista de cosas que deberás configurar e instalar para poder ejecutar el proyecto.
-* Node.js
-[Web oficial](https://nodejs.org/)
+* [Node.js](https://nodejs.org/)
 * npm
   ```sh
   npm install npm@latest -g
@@ -101,7 +99,7 @@ Esta es una lista de cosas que deberás configurar e instalar para poder ejecuta
 - [x] Agregar página Composición corporal.
 - [x] Implementar gráficas de Chart.js en el proyecto.
 - [x] Generar componentes para gráficas, tablas, secciones y alertas.
-- [] Agregar contenido a la página Inicio.
+- [ ] Agregar contenido a la página Inicio.
 
 <p align="right">(<a href="#readme-top">Ir arriba</a>)</p>
 
@@ -145,18 +143,16 @@ Link del proyecto: [https://github.com/Miwi64/Dashboard](https://github.com/Miwi
 
 <!-- ACKNOWLEDGMENTS -->
 ## Reconocimientos
-
-* [Choose an Open Source License](https://choosealicense.com)
 * [Chart.js][Chart-url]
+* [Best-README-Template][read-url]
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
-* [Best-README-Template] (https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">Ir arriba</a>)</p>
-
+[read-url]: https://github.com/othneildrew/Best-README-Template
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Chart.js]: https://img.shields.io/badge/Chart.js-orange
+[Chart.js]: https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white
 [Chart-url]: https://www.chartjs.org
