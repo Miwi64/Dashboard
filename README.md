@@ -37,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
 Proyecto de React que utiliza Next.js [Link del proyecto](https://dashboard-nine-gamma-32.vercel.app/)
-Consiste en una web básica que cuenta con los siguientes apartados:
+* Consiste en una web básica que cuenta con los siguientes apartados:
 * Pagina principal
 * Composición corporal: Formulario para calcular la masa osea, masa grasa, masa residual y masa muscular.
 * Acerca de: Sección genérica con datos de contacto.
