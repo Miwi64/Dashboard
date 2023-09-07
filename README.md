@@ -50,7 +50,7 @@ Consiste en una web básica que cuenta con los siguientes apartados:
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Chart][Chart.js]][React-url]
+* [![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,16 +143,13 @@ Link del proyecto: [https://github.com/Miwi64/Dashboard](https://github.com/Miwi
 
 <!-- ACKNOWLEDGMENTS -->
 ## Reconocimientos
-* [Chart.js][Chart-url]
-* [Best-README-Template][read-url]
+* [Chart.js](https://www.chartjs.org)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
 
 <p align="right">(<a href="#readme-top">Ir arriba</a>)</p>
-[read-url]: https://github.com/othneildrew/Best-README-Template
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Chart.js]: https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white
-[Chart-url]: https://www.chartjs.org
