@@ -2,15 +2,13 @@ import ContentTile from '@/components/ContentTile';
 import CustomFooter from '@/components/CustomFooter';
 import ParallaxHeader from '@/components/ParallaxHeader';
 import SimpleSection from '@/components/SimpleSection';
-import { Lato } from 'next/font/google'
-const title = Lato({ subsets: ['latin'], weight: ["700"]})
 
 function About(){
   const mission = `Nuestra misión es transformar ideas en realidades digitales a 
                   través de soluciones de software innovadoras. Estamos comprometidos con la excelencia
                    en el desarrollo de aplicaciones y sistemas que impulsen el progreso tecnológico y mejoren
                     la vida de las personas y las empresas en todo el mundo.`;
-  const collab = `Si compartes nuestra pasión y te gustaría contribuir,¡nos encantaría saber de ti! 
+  const collab = `Si compartes nuestra pasión y te gustaría contribuir, ¡nos encantaría saber de ti! 
                   Visita nuestra página para obtener más información sobre cómo puedes involucrarte.`;
   const dividerStyle = 'w-[45%] m-auto border-subtitle';
   const services = [
@@ -40,7 +38,7 @@ function About(){
   return(
   <div className="bg-back h-full w-full">
       <ParallaxHeader title={'Acerca de'} image={'https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg'}/>
-      <SimpleSection title={'Nuestra Mision'} content={mission}/>
+      <SimpleSection title={'Nuestra Misión'} content={mission}/>
       <hr className={dividerStyle}/>
       <section className= 'p-10 text-center'>
       <h2 className={`text-subtitle text-5xl mb-8`}>Lo que ofrecemos</h2>
