@@ -16,7 +16,7 @@ module.exports = {
     colors: {
       primary: '#ef0e9d',
       secondary: '#f15417',
-      back: '#211a1f',
+      back: '#110D10',
       subtitle: '#635d63',
       line: '#857f84',
       boxback: '#50414c',
