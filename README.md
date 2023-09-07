@@ -87,9 +87,9 @@ Esta es una lista de cosas que deberás configurar e instalar para poder ejecuta
 
 <!-- USAGE EXAMPLES -->
 ## Uso
-* Página de Inicio. [![Inicio][start-screenshot]]
-* Página Composición corporal. [![Composicion][composition-screenshot]]
-* Página Acerca de. [![Acerca-de][about-screenshot]]
+* Página de Inicio. ![Inicio][start-screenshot]
+* Página Composición corporal. ![Composicion][composition-screenshot]
+* Página Acerca de. ![Acerca-de][about-screenshot]
 <p align="right">(<a href="#readme-top">Ir arriba</a>)</p>
 
 <!-- ROADMAP -->
