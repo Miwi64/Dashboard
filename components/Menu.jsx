@@ -10,7 +10,7 @@ const menuRoutes = [
     },
     {
         route: '/composition',
-        name: 'Composicion Corporal'
+        name: 'Composición Corporal'
     },
     {
         route: '/about',
