@@ -4,7 +4,7 @@ export default function OptionInput({name, label, options, value, onChange}){
     return(
         <>
             <label htmlFor={name} className={labelStyle}>{label}</label>
-            <select id={name} className={inputStyle} value={value} onChange={onChange}>
+            <select id={name} name={name} className={inputStyle} value={value} onChange={onChange}>
                 {options.map((option, index) => (<option key={index} value={option}>{option}</option>))}
             </select>
         </>

@@ -5,7 +5,7 @@ export default function NumericInput({label, name, value, onChange}){
     return(
         <>
             <label htmlFor={`${name}`} className={labelStyle}>{label}</label>
-            <input className={inputStyle} type="text" id={`${name}`} value={value} onChange={onChange}/>
+            <input id={name} className={inputStyle} type="text" name={`${name}`} value={value} onChange={onChange}/>
             {isNaN(value) && (<p className={notifyStyle}>El valor introducido no es numerico</p>)}
         </>
     );

@@ -1,3 +1,4 @@
+
 function Home(){
   return(
     <div className="bg-back h-screen w-full p-20">

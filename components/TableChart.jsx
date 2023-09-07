@@ -6,6 +6,7 @@ export default function TableChart ({headers,data}){
     const redondear = (num) => Math.round(num*100)/100
     return(
         <table className={tableStyle}>
+            <tbody>
             <tr className='text-left bg-secondary'>
                 {headers.map((cell, index) => (<th className={headerStyle} key={index}>
                     {cell}
@@ -15,6 +16,7 @@ export default function TableChart ({headers,data}){
             (<tr className={rowStyle} key={index}>
                 {Object.values(row).map((d,i) => (<td className={cellStyle} key={i}>{isNaN(d)? d:redondear(d)}</td>))}
             </tr>))}
+            </tbody>
         </table>
     );
 }

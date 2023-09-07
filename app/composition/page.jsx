@@ -86,19 +86,18 @@ function Composition(){
   
   return(
   <div className=" bg-back w-full p-20">
-    <h1 className={titleStyle}>
-        Composición corporal</h1>
+    <h1 className={titleStyle}>Composición corporal</h1>
     <form onSubmit={handleSubmit}>
     {error && (<Alert text="Llenar todos los campos"/>)}
       <div className='flex flex-col lg:flex-row flex-wrap gap-8 p-10 justify-start'>
           {
             Object.keys(formData).map((property,index) => (
-              <div className='basis-[30%]'>
+              <div key={index} className='basis-[30%]'>
                 {
                   property === "gender"? 
-                  <OptionInput key={index} label={labels[index]} options={['','M','F']}
+                  <OptionInput label={labels[index]} options={['','M','F']}
                   value={formData[property]} name={property} onChange={e => handleInputChange(e)}/> : 
-                  <NumericInput key={index} label={labels[index]} 
+                  <NumericInput label={labels[index]} 
                   value={formData[property]} name={property} onChange={e => handleInputChange(e)}/>
                 }
               </div>
