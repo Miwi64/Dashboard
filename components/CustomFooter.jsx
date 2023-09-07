@@ -1,3 +1,7 @@
+/**
+ * React Component for CustomFooter
+ * @returns {JSX.Element} - A JSX element representing the Page Footer. 
+ */
 export default function CustomFooter(){
     return(
         <footer className='bg-footerback p-8 flex flex-row gap-20 w-full'>

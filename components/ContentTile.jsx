@@ -1,3 +1,11 @@
+/**
+ * React Component for tiles
+ * @param {string} title - The Tile title.
+ * @param {string} image - The source path of the Tile's image.
+ * @param {string} alt - The help text of the Tile's image.
+ * @param {string} content - The Tile text content.
+ * @returns {JSX.Element} - A JSX element representing the Alert box. 
+ */
 export default function ContentTile({title, image, alt, content}){
     return(
             <div className='flex-1 text-center bg-primary'>

@@ -1,8 +1,19 @@
+/**
+ * React Component for the Menu sidebar.
+ * @returns {JSX.Element} - A JSX element representing the Menu sidebar. 
+ */
+
 import Link from "next/link";
 import { Lato } from 'next/font/google'
 
+/*
+    Importing Titles font
+*/
 const title = Lato({ subsets: ['latin'], weight: ["700"]})
 
+/*
+    Website routes
+*/
 const menuRoutes = [
     {
         route: '/',
@@ -22,6 +33,9 @@ function Menu() {
     return(
         <div className="w-[20%] bg-black h-screen p-10">
             <h1 className={`text-[#807980] mt-5 mb-5 text-4xl`}>Menu</h1>
+            {/*
+                Generating Menu links list.
+            */}
             <ol>
                 {
                     menuRoutes.map((menu,index) => (
