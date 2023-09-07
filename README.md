@@ -87,7 +87,9 @@ Esta es una lista de cosas que deberás configurar e instalar para poder ejecuta
 
 <!-- USAGE EXAMPLES -->
 ## Uso
-
+* Página de Inicio. [![Inicio][start-screenshot]]
+* Página Composición corporal. [![Composicion][composition-screenshot]]
+* Página Acerca de. [![Acerca-de][about-screenshot]]
 <p align="right">(<a href="#readme-top">Ir arriba</a>)</p>
 
 <!-- ROADMAP -->
@@ -155,3 +157,6 @@ Link del proyecto: [https://github.com/Miwi64/Dashboard](https://github.com/Miwi
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[start-screenshot]: images/dashboard-start.png
+[composition-screenshot]: images/dashboard-composition.png
+[about-screenshot]: images/dashboard-about.png
