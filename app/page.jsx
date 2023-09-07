@@ -1,4 +1,7 @@
-
+/**
+ * React page for Home Page.
+ * @returns {JSX.Element} - A JSX element representing the Home Page.
+ */
 function Home(){
   return(
     <div className="bg-back h-screen w-full p-20">
