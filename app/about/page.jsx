@@ -14,14 +14,14 @@ function About(){
   const services = [
     {
       title: 'Desarrollo de Aplicaciones Móviles',
-      image: 'https://images.pexels.com/photos/7350911/pexels-photo-7350911.jpeg',
+      image: '/images/mobile.jpeg',
       alt: 'app-movil',
       content: `Transformamos tus ideas en aplicaciones móviles atractivas y funcionales. 
       Creamos soluciones que brindan experiencias de usuario excepcionales y cumplen con tus objetivos.`
     },
     {
       title: 'Desarrollo Web Personalizado para ti',
-      image: 'https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg',
+      image: '/images/web.jpeg',
       alt: 'app-web',
       content: `Desde sitios web informativos hasta plataformas de comercio electrónico, creamos sitios web 
       personalizados que se adaptan a las necesidades únicas de tu negocio. Nuestro enfoque en el diseño intuitivo y 
@@ -29,7 +29,7 @@ function About(){
     },
     {
       title: 'Desarrollo de Software Empresarial',
-      image: 'https://images.pexels.com/photos/3862373/pexels-photo-3862373.jpeg',
+      image: '/images/bussiness.jpeg',
       alt: 'empresarial',
       content: `Optimiza tus operaciones comerciales con software personalizado. Creamos soluciones de 
       software empresarial que automatizan procesos, mejoran la eficiencia y permiten un mejor control de los datos.`
@@ -37,7 +37,7 @@ function About(){
   ]
   return(
   <div className="bg-back h-full w-full">
-      <ParallaxHeader title={'Acerca de'} image={'https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg'}/>
+      <ParallaxHeader title={'Acerca de'} image={'/images/banner.jpeg'}/>
       <SimpleSection title={'Nuestra Misión'} content={mission}/>
       <hr className={dividerStyle}/>
       <section className= 'p-10 text-center'>
