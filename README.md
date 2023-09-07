@@ -50,7 +50,7 @@ Consiste en una web básica que cuenta con los siguientes apartados:
 
 * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white)]
+* ![Chart.js](https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -149,6 +149,8 @@ Link del proyecto: [https://github.com/Miwi64/Dashboard](https://github.com/Miwi
 * [GitHub Pages](https://pages.github.com)
 
 <p align="right">(<a href="#readme-top">Ir arriba</a>)</p>
+
+
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
